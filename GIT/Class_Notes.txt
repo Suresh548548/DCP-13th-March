@@ -587,4 +587,396 @@ DAY-3
 				MobaXterm for windows
 				Putty
 			Terminal 
+				
+				
+
+#######
+DAY-4
+#######			
 		
+		Local Git Repo.
+		
+			git init
+			git add
+			git commit 
+			
+		
+		
+		GIT BASH & GIT GUI 
+		
+		
+		git init -- used to initialize a local git repo.
+						--> .git folder ==> 
+						--> Created a default branch (master/main)
+		
+		Local Machine :
+		
+		Working dir.		---->			staging Area			----> 		Local Repo
+		
+		
+		
+		Tracking :::
+			Who ? when ? What ?
+			
+		git config user.name , user.email 
+		
+			Local 
+			global 
+			
+		git config --global user.name "Loksai"
+		git config --global user.email "xyz@az.com"
+		
+		Local Config :
+		git config user.email "xyz@az.com"
+		
+		DEV Team: 
+		
+		
+		Project_ID 
+		CR_No
+		
+		service id
+		
+		d1,d2,d3,d4,d5
+		
+		repo --> 
+		
+		git add .
+		git add f1.txt 
+		git add *.txt 
+		
+		
+		echo "hello"
+		
+		log 
+		
+		git status  (vs) git log 
+		
+		
+		touch 
+		
+		echo "adfa" >> f1.txt 
+		
+		vi f1.txt 
+		
+		esc :wq	enter	===> save and exit from file
+		rsc :q! enter	===> exit without save 
+		
+		
+		Java_web_app_project			-- repo. 
+			index.jsp 
+			properties 
+			readme.md 
+		
+		git ignore.
+		
+		
+		Java_web_app_project
+			git init 
+			
+			vi .gitignore
+			
+			git add .
+			
+			git commit -m "initial commit"	
+				
+				mkdir dir 
+				files 
+			
+			
+			signin.class
+			signin.java
+			index.jsp 
+			signup.java 		---> sql 
+			db_credential
+			secret 
+			
+			.gitignore
+				db_credential
+				secret
+				signin.class
+				
+			git add .
+			
+			commited  ( local machine) 						>>> 				remote repo 
+			
+			
+	git diff ::::
+	
+			git diff 
+			git diff <commit_id> <commit_id1>
+			
+			git rm --cached <f1.txt>	==> Just remove from staging area, but will be thr in working dir
+			git rm -f <f1.txt>			==> Just remove from staging area & from working dir
+			
+NEXT ::
+	GIT :
+		reset 
+		revert
+		branch...
+		
+#######
+DAY-5
+#######
+
+		GIT Reset ==> is used to reset the committed changes.
+
+		git rm ===> is used to unstage the changes .
+		
+
+	git reset vs revert 
+	
+	d1,d2....
+	
+	
+	during deployment ::
+	
+		releases
+			ver1.9 -> prod 	
+				ver1.8
+			bug 
+		
+			-> first try to fix 4hr -6hrs 
+			--> revert the changes 
+			
+		reset ::: 
+		
+		reset ===> will remove the commits from the history 
+		revert ==> will not remove the commit from the history, but it will create a new commit point'
+		
+		
+		remote ::::
+		
+			jobs --> run the monitoring tools --> infra --> memory, user access, ==> data-file  .
+			
+			store in the repo1. (temp) reset hard 
+			
+			data-file -- 
+			has to be processed 
+			can be stored in repo2 -- permanent repo
+			==> will be shared with the business users/Dashboard 
+			
+			
+			artifacts -- 
+			
+			
+		reset 
+		revert 
+		
+		branches!!!
+		
+		GIT Branching!
+		
+		commit .
+		
+		git commit -m "cm1"
+		
+		file1.java ==> 10 func. 
+		
+		git add . == > adding the new changes 
+		
+		github ==> dev1(owner) 1 ===> forked(dev1) sync. 1
+		+100
+		
+			
+		
+	Git Branching ::: ==> is used to enable parallel development 
+	
+	Proj_Repo1: (master)
+		index.jsp (f1,2,3,4)
+	create new branch --> feature1.
+	
+	
+	Proj_Repo1:(master)
+		rel1:
+		rel2:
+	
+	
+	GIT Branching Strategies :::
+	
+		master : 
+			feature1	
+			feature2
+			feature3
+			
+		
+	Local Repo.															Remote_Repo 		==> Build & Deployment 
+		master :						====> 								master: (RELEASE_Version)
+
+			hot-fix/adhoc branch:
+		
+			Release_Branch:
+				Integration_Branch:	(App_Team1)				
+					Developer1  tag1
+						feature1 tag1	
+						feature2
+						feature3
+					Developer2
+						feature1	
+						feature2
+						feature3
+
+				Integration_Branch:	(App_Team2)				
+					Developer1  f1,
+						feature1  unit_testing 	
+						feature2
+						feature3
+					Developer2
+						feature1	
+						feature2
+						feature3
+							
+		
+		Producion issues 
+	
+	
+				release ID / Tags :::				
+				
+					jdk1.7
+					
+					jdk1.8
+					
+					jdk1.9 
+					jdk1.9.1
+					jdk1.9.2
+					jdk1.9.3
+					
+			src_code_tag/version		build --> *.war_v1.0 ==> Build-versioning
+			
+			DevOps Engg. === role ??? 
+			create some scripts. 
+			
+			DevOps_Admin Repo.
+		
+					jenkins
+					kubernetes
+					
+					
+			git branch workflow 
+			
+			git workflow
+			github workflow
+			az_repo workflow 
+
+  709  mkdir samplerepo4
+  710  cd samplerepo4
+  711  clear
+  712  git status
+  713  git init
+  714  echo "rec1" >> f1.txt
+  715  git add .
+  716  git commit -m "CM1"
+  717  echo "rec1" >> f2.txt
+  718  git add .
+  719  git commit -m "CM2"
+  720  echo "rec1" >> f3.txt
+  721  git add .
+  722  git commit -m "CM3"
+  723  echo "rec1" >> f4.txt
+  724  git add .
+  725  git commit -m "CM4"
+  726  echo "rec1" >> f5.txt
+  727  git add .
+  728  git commit -m "CM5"
+  729  clear
+  730  git log --oneline
+  731  git status
+  732  ls
+  733  git ls-files
+  734  git reset --soft 62b36b9
+  735  git status
+  736  git ls-files
+  737  ls
+  738  git log --oneline
+  739  git commit -m "CM5.1"
+  740  git log --oneline
+  741  git reset --soft 17d3ce1
+  742  git log --oneline
+  743  git status
+  744  git commit -m "CM3.1"
+  745  git status
+  746  git log --oneline
+  747  git show d21b7f2
+  748  echo "rec1" >> f6.txt
+  749  git add .
+  750  git commit -m "CM4"
+  751  echo "rec1" >> f7.txt
+  752  git add .
+  753  git commit -m "CM5"
+  754  git log --oneline
+  755  ls
+  756  git ls-files
+  757  git reset --mixed 4d79c31
+  758  git status
+  759  git ls-files
+  760  ls
+  761  git add .
+  762  git commit -m "CM5.1"
+  763  git log --oneline
+  764  git ls-files
+  765  git log --oneline
+  766  ls
+  767  git ls-files
+  768  git status
+  769  git reset --hard 4d79c31
+  770  git log --oneline
+  771  git status
+  772  git ls-files
+  773  ls
+  774  git reset --hard f63e3ba
+  775  ls
+  776  git log --oneline
+  777  git reset --hard f63e3ba
+  778  ls
+  779  clear
+  780  git log --oneline
+  781  ls
+  782  echo "rec1" >> f2.txt
+  783  git add .
+  784  git commit -m "CM2"
+  785  echo "rec1" >> f3.txt
+  786  git add .
+  787  git log --oneline
+  788  git commit -m "CM3"
+  789  echo "rec1" >> f4.txt
+  790  git add .
+  791  git commit -m "CM4"
+  792  clera
+  793  clear
+  794  git log --oneline
+  795  git revert 3c68121
+  796  git log --oneline
+  797  ls
+  798  git show 70527f9
+  799  git show f189ae9
+  800  git show 3c68121
+  801  ls
+  802  git revert f189ae9
+  803  ls
+  804  cd d:
+  805  cd Mar13-Project/
+  806  pwd
+  807  mkdir samplerepo5
+  808  cd samplerepo5
+  809  clear
+  810  git init
+  811  echo "rec1" >> f1.txt
+  812  git add .
+  813  git commit -m "asdfadfasdf"
+  814  git log --oneline
+  815  git commit --ament -m "New Msg1"
+  816  git commit --amend -m "New Msg1"
+  817  git log --oneline
+  818  clear
+  819  git log --oneline
+  820  clear
+  821  ls
+  822  git status
+  823  git log --oneline
+  824  clear
+  825  git log --oneline
+  826  history
+
+NEXT :			
+			Working Create Branches ::::
+			
