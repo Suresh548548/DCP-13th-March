@@ -1546,3 +1546,105 @@ DAY-7
   833  ls
   834  ls -a
   835  history
+
+
+#######
+DAY-8
+#######
+
+		Working with Jenkins.
+		
+		Jenkins is a Build Orchestration Tool :::
+		
+			DevOps --> 
+			
+		CI/CD Pipeline ::
+		
+		Jenkins is a Master  Slave Architecture.
+		
+		Jenkins can be used 
+		
+			DevOps Team -- Admin.
+				Owner of Jenkins:
+				Installation
+					Linux Machine - VMs(AWS)
+						Install Jenkins						
+				Managing Jenkins 
+					Plugins Mgmt.
+					User Mgmt.
+					Security.
+					Config. Mgmt
+					Jobs/Project Mgmt.
+					
+			Dev Team
+				- are just the Consumers.
+		
+		Java_web_app_project ::: 100, 200, 300...
+		
+			CI/CD Pipeline Jobs 
+			
+			Stages :
+				Stage1 - SCM Checkout
+				Stage2 - Build 
+				Stage3 - Deployment 
+				
+			Jenkins Server:
+			
+			Jenkins_Master - Slave Architecture ::
+		
+		
+			Jenkins Server: (Master)
+				Slave1 		: 	Java_Projects - build & Create Artifacts 
+				Slave1.1 	: 	Java_Projects - build & Create Artifacts
+				Slave2 		:	.Net
+				Slave3 		:	Python 
+				
+		- Launch EC2 Instance (1+1)
+				AWS Account
+				Login to AWS Console
+					- As a root user. (email_ID & password)
+					
+				Create EC2 Instances(VMs) 
+					Connect to EC2 Instances(VMs)
+						- EC2 Instance Connect using AWS Console 
+						- SSH Clients :
+							MobaXterm (Windows)
+							Putty
+		- Installing Jenkins 
+		- Manage Jenkins Server 
+			Plugin 
+			User 
+			System Config
+			Tools Mgmt
+		- Create Jenkins Jobs/Projects
+			
+	
+	Jenkins Runs as a Service in port 8080
+	
+		package managers ::: are used to manage the packages(Install/Unstallation/Upgrade)	
+			yum
+			dnf
+			apt-get
+			rpm
+			
+		Amazon-linux-2 Machine 
+		
+			amazon-linux-extras - package manager.
+			
+Summary :::
+
+		- Launch EC2 Instance (1+1)
+				AWS Account
+				Login to AWS Console
+					- As a root user. (email_ID & password)
+					
+				Create EC2 Instances(VMs) 
+					Connect to EC2 Instances(VMs)
+						- EC2 Instance Connect using AWS Console 
+						- SSH Clients :
+							MobaXterm (Windows)
+							Putty
+			Install Jenkins !
+			Explore Jenkins Dashboard
+			Manage Jenkins 
+				Plugin Manager
